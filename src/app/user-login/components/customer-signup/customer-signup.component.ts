@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { UserDataService } from '../user-data.service';
-import { User } from '../users';
+import { UserDataService } from '../../services/user-data.service';
+import { User } from 'src/assets/userSearch/users';
 
 @Component({
   selector: 'app-customer-signup',

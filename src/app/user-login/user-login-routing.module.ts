@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CustomerSigninComponent } from './customer-signin/customer-signin.component';
-import { CustomerSignupComponent } from './customer-signup/customer-signup.component';
-import { SellerSigninComponent } from './seller-signin/seller-signin.component';
-import { SellerSignupComponent } from './seller-signup/seller-signup.component';
+import { CustomerSigninComponent } from './components/customer-signin/customer-signin.component';
+import { CustomerSignupComponent } from './components/customer-signup/customer-signup.component';
+import { SellerSigninComponent } from './components/seller-signin/seller-signin.component';
+import { SellerSignupComponent } from './components/seller-signup/seller-signup.component';
 
 const routes: Routes = [
   { path : 'csin', component : CustomerSigninComponent},

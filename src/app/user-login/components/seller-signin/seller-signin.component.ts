@@ -1,20 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { UserDataService } from '../user-data.service';
+import { UserDataService } from '../../services/user-data.service';
 
 @Component({
-  selector: 'app-customer-signin',
-  templateUrl: './customer-signin.component.html',
-  styleUrls: ['./customer-signin.component.css']
+  selector: 'app-seller-signin',
+  templateUrl: './seller-signin.component.html',
+  styleUrls: ['./seller-signin.component.css']
 })
-export class CustomerSigninComponent implements OnInit {
+export class SellerSigninComponent implements OnInit {
 
-  loginCh = true;
+  loginCh =true;
 
-  constructor(private userService : UserDataService) { }
+  constructor(private userService :UserDataService) { }
 
   ngOnInit(): void {
   }
-
   submit(login: { form: { value: any; }; }){
     let checkUser = {
       id : '',
@@ -25,7 +24,7 @@ export class CustomerSigninComponent implements OnInit {
       address : '',
       name : '',
       password : login.form.value.pass,
-      type : 'customer'
+      type : 'seller'
     };
     this.loginCh=this.userService.authentication(checkUser);
   }
