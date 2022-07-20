@@ -1,0 +1,46 @@
+[
+    {
+        "id" : "24959",
+        "name" : "Vijay",
+        "phone" : "9493037428",
+        "emailid" : "kvsvijaykumar17@gmail.com",
+        "gender" : "Male",
+        "address" : "Pune",
+        "username" : "kvsvijay",
+        "password" : "abcd1234",
+        "type" : "customer"
+    },
+    {
+        "id" : "24950",
+        "name" : "Kumari",
+        "phone" : "9704908099",
+        "emailid" : "vijayakumari4442001@gmail.com",
+        "gender" : "Female",
+        "address" : "Mumbai",
+        "username" : "kumari",
+        "password" : "efgh1234",
+        "type" : "customer"
+    },
+    {
+        "id" : "24650",
+        "name" : "Sai",
+        "phone" : "8919049914",
+        "emailid" : "lokeshpalli3129@gmail.com",
+        "gender" : "Male",
+        "address" : "Kakinada",
+        "username" : "saikumar",
+        "password" : "ijkl1234",
+        "type" : "seller"
+    },
+    {
+        "id" : "24112",
+        "name" : "Vinay",
+        "phone" : "8074832728",
+        "emailid" : "vinaykumarab11@gamil.com",
+        "gender" : "Male",
+        "address" : "Vizianagaram",
+        "username" : "vinaykumar",
+        "password" : "mnop1234",
+        "type" : "seller"
+    }
+]

@@ -1,0 +1,111 @@
+<div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+          class="img-fluid"
+          alt="Sample image"
+        />
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <h3>Seller Sign Up</h3>
+        <form #login="ngForm" (ngSubmit)="submit(login)">
+          <div
+            class="
+              d-flex
+              flex-row
+              align-items-center
+              justify-content-center justify-content-lg-start
+            "
+          ></div>
+          <div style="margin-top:5%;" class="form-outline mb-4">
+            <input
+              type="username"
+              id="nam"
+              class="form-control"
+              placeholder="Name"
+              name="name"
+              ngModel
+            />
+          </div>
+  
+          <div class="form-outline mb-3">
+            <input
+              type="string"
+              id="num"
+              class="form-control"
+              placeholder="Phone Number"
+              name="phone"
+              ngModel
+            />
+          </div>
+  
+          <div class="form-outline mb-3">
+            <input
+              type="email"
+              id="eml"
+              class="form-control"
+              placeholder="Email Id"
+              name="email"
+              ngModel
+            />
+          </div>
+  
+          <div class="form-outline mb-3">
+            <input
+              type="gender"
+              id="ge"
+              class="form-control"
+              placeholder="Gender"
+              name="gen"
+              ngModel
+            />
+          </div>
+  
+          <div class="form-outline mb-3">
+            <input
+              type="address"
+              id="add"
+              class="form-control"
+              placeholder="Shop Address"
+              name="addr"
+              ngModel
+            />
+          </div>
+  
+          <div class="form-outline mb-3">
+            <input
+              type="username"
+              id="un"
+              class="form-control"
+              placeholder="Username"
+              name="usern"
+              ngModel
+            />
+          </div>
+  
+          <div class="form-outline mb-3">
+            <input
+              type="password"
+              id="pass"
+              class="form-control"
+              placeholder="Password"
+              name="password"
+              ngModel
+            />
+          </div>
+  
+          <div class="text-center text-lg-start mt-4 pt-2">
+            <button
+              type="submit"
+              class="btn btn-primary btn-lg"
+              style="padding-left: 2.5rem; padding-right: 2.5rem;"
+            >
+              Sign Up
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  

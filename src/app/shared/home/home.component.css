@@ -1,0 +1,42 @@
+.background{
+    height: 100%;
+    margin: 0;
+    background-image: url('https://mobisoftinfotech.com/resources/wp-content/uploads/2018/11/Banner-Why-on-demand-grocery-apps-are-gaining-huge-popularity-in-India-1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.seller{
+    color: rgb(197, 238, 130);
+    margin-left: 1030px;
+    margin-top: 405px ;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.customerhome{
+    margin-left: 950px;
+    font-size: 20px;
+    font-style: oblique;
+    margin-top: 0px;
+}
+
+.welcome{
+    font-size: 30px;
+    margin-left: 100px;
+    font-style:oblique ;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.space {
+    width: 10px;
+    height: auto;
+    display: inline-block;
+  }
+
+  .btn-toolbar{
+    margin-left: 890px;
+  }
