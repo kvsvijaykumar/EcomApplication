@@ -14,7 +14,13 @@
     font-weight: bold;
     font-style: italic;
 }
-
+.seller2{
+    color: rgb(197, 238, 130);
+    margin-left: 1150px;
+    margin-top: 448px ;
+    font-weight: bold;
+    font-style: italic;
+}
 .customerhome{
     margin-left: 950px;
     font-size: 20px;

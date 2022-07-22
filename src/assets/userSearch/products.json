@@ -1,0 +1,65 @@
+[
+    {
+        "shopId" : "24650",
+        "productName" : "Laptop",
+        "description" : "Brand Laptop",
+        "proudctId" : "1",
+        "imgLink" : "https://image.shutterstock.com/image-illustration/blue-book-bookmark-3d-illustration-600w-1502205479.jpg",
+        "price" : "Rs.200",
+        "stock" : "2"
+    },
+    {
+        "shopId" : "24650",
+        "productName" : "Pen",
+        "description" : "Black Ink Pen",
+        "proudctId" : "2",
+        "imgLink" : "https://cdn.vectorstock.com/i/1000x1000/04/35/pen-vector-800435.webp",
+        "price" : "Rs.250",
+        "stock" : "3"
+    },
+    {
+        "shopId" : "24650",
+        "productName" : "Table",
+        "description" : "Wooden Table",
+        "proudctId" : "3",
+        "imgLink" : "https://cdn.vectorstock.com/i/1000x1000/76/27/wooden-table-vector-1757627.webp",
+        "price" : "Rs.1970",
+        "stock" : "4"
+    },
+    {
+        "shopId" : "24650",
+        "productName" : "Table",
+        "description" : "Wooden Table",
+        "proudctId" : "3",
+        "imgLink" : "https://cdn.vectorstock.com/i/1000x1000/76/27/wooden-table-vector-1757627.webp",
+        "price" : "Rs.1970",
+        "stock" : "8"
+    },
+    {
+        "shopId" : "24112",
+        "productName" : "Mobile",
+        "description" : "Vivo Mobile",
+        "proudctId" : "4",
+        "imgLink" : "https://images.firstpost.com/fpimages/1200x800/fixed/jpg/2020/10/vivo-y30-price-cut-india.jpg",
+        "price" : "Rs.12385",
+        "stock" : "5"
+    },
+    {
+        "shopId" : "24112",
+        "productName" : "Pen Drive",
+        "description" : "Sandisk Pen Drive",
+        "proudctId" : "5",
+        "imgLink" : "https://d2xamzlzrdbdbn.cloudfront.net/products/885557b7-4645-4bf0-8e45-c3f04408879d22101342.jpg",
+        "price" : "Rs.395",
+        "stock" : "6"
+    },
+    {
+        "shopId" : "24112",
+        "productName" : "Mouse",
+        "description" : "HP Mouse",
+        "proudctId" : "6",
+        "imgLink" : "https://m.media-amazon.com/images/I/51gU704TWYL._SX522_.jpg",
+        "price" : "Rs.470",
+        "stock" : "7"
+    }
+]

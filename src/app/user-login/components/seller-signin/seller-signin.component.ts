@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserDataService } from '../../services/user-data.service';
+import { Router } from '@angular/router';
+import { Login } from '../../models/login..model';
 
 @Component({
   selector: 'app-seller-signin',
@@ -10,11 +12,11 @@ export class SellerSigninComponent implements OnInit {
 
   loginCh =true;
 
-  constructor(private userService :UserDataService) { }
+  constructor(private userService :UserDataService, private route : Router)  { }
 
   ngOnInit(): void {
   }
-  submit(login: { form: { value: any; }; }){
+  submit(login: Login){
     let checkUser = {
       id : '',
       username : login.form.value.user,
@@ -27,6 +29,9 @@ export class SellerSigninComponent implements OnInit {
       type : 'seller'
     };
     this.loginCh=this.userService.authentication(checkUser);
+    if(this.loginCh){
+      this.route.navigate(['seller-pages/dash']);
+    }
   }
 
   loginCheck(){

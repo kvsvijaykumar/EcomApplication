@@ -4,7 +4,6 @@ import { CustomerSigninComponent } from './components/customer-signin/customer-s
 import { CustomerSignupComponent } from './components/customer-signup/customer-signup.component';
 import { SellerSigninComponent } from './components/seller-signin/seller-signin.component';
 import { SellerSignupComponent } from './components/seller-signup/seller-signup.component';
-
 const routes: Routes = [
   { path : 'csin', component : CustomerSigninComponent},
   { path : 'ssin', component : SellerSigninComponent},

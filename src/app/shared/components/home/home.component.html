@@ -4,20 +4,25 @@
     Welcome to EcomApp..Sign in or Sign up to proceed further!
   </p>
   <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-    <div class="btn-group mr-2" role="group" aria-label="First group">
-      <button type="button" class="btn btn-primary btn-lg " routerLink="user-login/csin">
-        Customer Sign In
-      </button>
-      <div class="space"></div>
-    </div>
-    <div class="btn-group mr-2" role="group" aria-label="First group">
-      <button type="button" class="btn btn-primary btn-lg" routerLink="user-login/csup">
-        Customer Sign Up
-      </button>
+    <div *ngIf="!isLoggedIn()">
+      <div class="btn-group mr-2" role="group" aria-label="First group">
+        <button type="button" class="btn btn-primary btn-lg " routerLink="user-login/csin">
+          Customer Sign In
+        </button>
+        <div class="space"></div>
+      </div>
+      <div class="btn-group mr-2" role="group" aria-label="First group">
+        <button type="button" class="btn btn-primary btn-lg" routerLink="user-login/csup">
+          Customer Sign Up
+        </button>
+      </div>
     </div>
   </div>
-  <div class="seller">
+  <div class="seller" *ngIf="!isLoggedIn()">
     <p>Are you a Seller? <a routerLink="user-login/ssin"><u>Sign In</u></a> or <a routerLink="user-login/ssup"><u>Sign
           Up</u></a></p>
+  </div>
+  <div class="seller2" *ngIf="isLoggedIn()">
+    <p><a>Logged in as {{name}}</a></p>
   </div>
 </div>
