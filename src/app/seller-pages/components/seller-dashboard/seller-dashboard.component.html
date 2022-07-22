@@ -1,0 +1,27 @@
+<main>
+    <div *ngIf="getProducts()"></div>
+    <div class="addpro text-center text-lg-start mt-4 pt-2">
+        <button type="submit" class="btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;"
+            routerLink="../adding">
+            Add Product
+        </button>
+    </div>
+    <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
+        <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3" >
+            <div class="col" *ngFor="let product of prod">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{product.productName}}</h5>
+                        <p class="card-text">{{product.price}}</p>
+                        <p class="card-text">Stock available : {{product.stock}}</p>
+                        <div class="space"></div>
+                        <a class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Login } from '../../models/login..model';
 import { UserDataService } from '../../services/user-data.service';
 
 @Component({
@@ -13,7 +14,7 @@ export class SellerSignupComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  submit(login: { form: { value: any; }; }){
+  submit(login: Login){
     let checkUser = {
       id : '',
       username : login.form.value.user,

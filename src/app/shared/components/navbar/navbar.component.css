@@ -6,10 +6,16 @@
     text-align: center;
     /* Height of the footer*/ 
     height: 50px;
-    background : rgb(30, 78, 236);
+    background: rgb(14,110,253);
     color: white;
+    font-weight: bold;
 }
 
 .navicon{
     display: inline-block;
+}
+
+.p{
+    font-weight: bolder;
+    color: white;
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserDataService } from '../../services/user-data.service';
 import { User } from 'src/assets/userSearch/users';
+import { Login } from '../../models/login..model';
 
 @Component({
   selector: 'app-customer-signup',
@@ -14,7 +15,7 @@ export class CustomerSignupComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  submit(login: { form: { value: any; }; }){
+  submit(login: Login){
     let checkUser = {
       id : '',
       username : login.form.value.user,

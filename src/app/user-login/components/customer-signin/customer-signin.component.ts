@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Login } from '../../models/login..model';
+
 import { UserDataService } from '../../services/user-data.service';
 
 @Component({
@@ -10,12 +13,12 @@ export class CustomerSigninComponent implements OnInit {
 
   loginCh = true;
 
-  constructor(private userService : UserDataService) { }
+  constructor(private userService : UserDataService,private route : Router) { }
 
   ngOnInit(): void {
   }
 
-  submit(login: { form: { value: any; }; }){
+  submit(login: Login){
     let checkUser = {
       id : '',
       username : login.form.value.user,
@@ -28,6 +31,8 @@ export class CustomerSigninComponent implements OnInit {
       type : 'customer'
     };
     this.loginCh=this.userService.authentication(checkUser);
+    if(this.loginCh)
+      this.route.navigate(['customer-pages/dash']);
   }
 
   loginCheck(){
